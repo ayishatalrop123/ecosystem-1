@@ -1,0 +1,855 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+body {
+	font-size: 17px;
+	overflow-x: hidden;
+    font-family: 'poppins-regular';
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+	color:#fff;
+   text-decoration: none;
+}
+a:hover{
+    box-shadow: 0 14px 18px #cccfcb;
+}
+img{
+    display: block;
+    width: 100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 18px;
+    color: #666;
+}
+h1,h3,h2{
+    font-size: 37px;
+    font-family:'poppins-bold'; 
+    line-height: 1.6rem;
+}
+h5,h4{
+    font-family: 'poppins-bold';   
+}
+.wrapper{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* styiling home section */
+
+#home header { 
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 10px 60px -10px #f1f9ef;
+    position: fixed;
+    top: 0;
+    z-index: 25;
+    background-color: #fff;
+}
+#home header .wrapper .header-container{
+    display: flex;
+    justify-content: space-between;
+}
+#home header .wrapper .header-container .left { 
+    width: 4%;
+}
+#home header .wrapper .header-container nav.right { 
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+#home header .wrapper .header-container nav.right .menu{
+   display: flex;
+   
+}
+#home header .wrapper .header-container nav.right .menu-btn i{
+   font-size: 20px;
+   cursor: pointer;
+   display: none;
+   color: rgb(11 190 97) ;
+}
+#click{
+   display: none;
+}
+#home header .wrapper .header-container nav.right ul li a { 
+    color: #666;
+    margin-left: 1rem;
+    font-size: 17px;
+}
+#home header .wrapper .header-container nav.right .menu li a:hover{
+   color: rgb(11 190 97);
+}
+#home header .wrapper .header-container nav.right ul li a.active{
+    color: rgb(11 190 97);
+    font-family: 'poppins-bold';
+}
+#home .spotlight { 
+    padding: 4rem 0px;
+}
+#home .spotlight .wrapper div { 
+    background-color:#f1f9ef;
+    padding: 4rem;
+    border-radius: 20px;
+}
+#home .spotlight .wrapper div h1 { 
+    margin-bottom: 1rem;
+    line-height: 3.5rem;
+    font-weight: 100px;
+}
+#home .spotlight .wrapper div h1 span { 
+    color: rgb(11 190 97);
+}
+#home .spotlight .wrapper div p{
+    font-size: 18px;
+}
+
+/* styling the ecosystem section */
+
+#ecosystem .wrapper .top ul { 
+    display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto auto;
+            gap: 1rem;
+}
+#ecosystem .wrapper .top ul li{
+        width: 100%;
+        padding: 20px 25px;
+        box-sizing: border-box;
+        border-radius: 15px;
+}
+#ecosystem .wrapper .top ul li:nth-child(1) { 
+    background-color: rgb(220 217 248);
+}
+#ecosystem .wrapper .top ul li:nth-child(2) { 
+    background-color: rgb(255 230 223);
+}
+#ecosystem .wrapper .top ul li:nth-child(3) { 
+    background-color: rgb(252 226 235);
+}
+#ecosystem .wrapper .top ul li:nth-child(4) { 
+    background-color: rgb(219 243 243);
+}
+#ecosystem .wrapper .top ul li:nth-child(5) { 
+    background-color: rgb(219 243 243);
+    justify-self: center;
+    grid-column: 1 / span 2;
+    width: 50%;
+}
+#ecosystem .wrapper .top ul li span { 
+    display: flex;
+    padding: 1rem;
+    width: 45%;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    background-color: #ffffff8a;
+}
+#ecosystem .wrapper .top ul li span .fa-solid { 
+    margin-right: .5rem;
+}
+#ecosystem .wrapper .top ul li span h6 { 
+    font-size: 15px;
+    font-family: 'poppins-bold';
+}
+#ecosystem .wrapper .top ul li p { 
+    font-size: 16px;
+}
+#ecosystem .wrapper .bottom { 
+    display: flex;
+    padding: 2rem 0;
+}
+#ecosystem .wrapper .bottom .text { 
+    width: 60%;
+    background-color: rgb(11 52 54);
+    padding: 2rem;
+    border-radius: 15px 0 0 15px;
+}
+#ecosystem .wrapper .bottom .text span { 
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 15px 20px;
+    background-color: #ffffff33;
+    border-radius: 25px;
+}
+#ecosystem .wrapper .bottom .text span h6 { 
+    margin-left: .5rem;
+    font-size: 16px;
+    font-family:'poppins-bold';
+}
+#ecosystem .wrapper .bottom .text p { 
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 17px;
+}
+#ecosystem .wrapper .bottom .image { 
+   border-radius: 0px 15px 15px 0px;
+   background-image: url(../images/about.png);
+   width: 46%;
+}
+ /* styling the vision tomorrow section */
+
+ #vision-tomorrow .wrapper h4 { 
+    font-size: 23px;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: 'poppins-bold';
+ }
+ #vision-tomorrow .wrapper ul { 
+    display: flex;
+    flex-wrap: wrap;  
+ }
+ #vision-tomorrow .wrapper ul li { 
+    width: 31%;
+    flex-direction: column;
+    align-items: center;
+    display : flex;
+    background: linear-gradient(180deg, #f2f2fe, rgba(242, 242, 254, 0));
+    border: 1px solid #e1e1ea;
+    padding: 1rem;
+    margin-right: 2%;
+    border-radius: 15px;  
+} 
+ #vision-tomorrow .wrapper ul li span { 
+    width: 13%;
+ } 
+ #vision-tomorrow .wrapper ul li h5 { 
+    font-size: 18px;
+    margin: 1rem 0 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+ } 
+ #vision-tomorrow .wrapper ul li p { 
+    font-size: 16px;
+ }
+
+  /* styling the techies-park section */
+
+ #techies-park .wrapper .banner { 
+    background: radial-gradient(562.91% 13171.47% at 564.66% 571.17%,
+     rgba(17, 200, 213, .2) 0,
+     #113c5e 100%), linear-gradient(0deg, #e1e1ea, #e1e1ea);
+     display: flex;
+     margin: 5% 0;
+     padding: 2rem;
+     border-radius: 15px;
+ }
+ #techies-park .wrapper .banner .left { 
+    width: 30%;
+ }
+ #techies-park .wrapper .banner .right { 
+    margin-left: 2rem;
+ }
+ #techies-park .wrapper .banner .right h5 { 
+    color: #fff;
+    font-size: 20px;
+ }
+ #techies-park .wrapper .banner .right p { 
+    color: #fff;
+    font-size: 17px;
+    margin-top: 1rem;
+ }
+ #techies-park .wrapper .top, #techies-park .wrapper .bottom { 
+    display: flex;
+    margin-bottom: 4rem;
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+ }
+ #techies-park .wrapper .top .para { 
+    width: 50%;
+    padding: 2rem;
+    border-radius: 30px 0px 0px 20px;
+    background: 
+                linear-gradient(to bottom, #f2f2fe, rgba(242, 242, 254, 0)), 
+                url('../images/background-techies-park.png') center/cover no-repeat;
+ }
+ #techies-park .wrapper .top .para h2 { 
+    color: rgb(33 191 109);
+    font-family: 'poppins-semibold';
+    font-weight: bold;
+    margin: 1rem 0;
+ }
+ #techies-park .wrapper .top .para p { 
+    width: 90%;
+    margin-bottom: 4rem ;
+ } 
+ #techies-park .wrapper .top .para .button { 
+    background: linear-gradient(127.01deg, #0fa76f -9.18%, #0f9ea7 129.96%);
+    padding: 15px 20px;
+    border-radius: 5px;
+ }
+ #techies-park .wrapper .top .image{
+    width: 50%;
+    height: 389px;
+    background-image: url(../images/techies-park-top.jpg);
+    background-size: cover;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border-radius: 0px 30px 20px 0px;
+    box-shadow: inset 75px 0 50px 3px rgb(250, 249, 249);
+   }
+    #techies-park .wrapper .top .image .overlay{
+      position: absolute;
+      top: 0%;     
+}
+ #techies-park .wrapper .bottom .image{
+   width: 50%;
+   height: 389px;
+   background-image: url(../images/techies-park-bottom.png);
+   background-size: cover;
+   background-position: 10px 10px;
+   background-repeat: no-repeat;
+   border-radius: 30px 0px 0px 20px;
+   box-shadow:inset -30px 0px  45px 2px #fff;
+ }
+ #techies-park .wrapper .bottom .image .overlay{
+   position: absolute;
+   top: -1%;
+   right: 49%;
+   transform: rotate(180deg);
+ }
+ #techies-park .wrapper .bottom .para { 
+    width: 50%;
+    padding: 2rem;  
+    border-radius: 0px 30px 20px 0px;   
+ } 
+ #techies-park .wrapper .bottom .para h2 { 
+    color: rgb(33 191 109);
+    font-family: 'poppins-semibold';
+    font-weight: bold;
+    margin: 1rem 0;
+    line-height: 2.6rem;
+ }
+ #techies-park .wrapper .bottom .para p { 
+    width: 90%;
+    margin-bottom: 3rem ;
+ }
+ #techies-park .wrapper .bottom .para .button { 
+    background: linear-gradient(127.01deg, #0fa76f -9.18%, #0f9ea7 129.96%);
+    padding: 15px 20px;
+    border-radius: 5px;
+ }
+
+ /* styling the card section */
+
+ #cards { 
+    background-color: rgb(236 244 234);
+    padding: 4rem 0;
+ }
+ #cards .wrapper .top { 
+    text-align: center;
+ }
+ #cards .wrapper .top h4 {  
+    font-size: 30px;
+ } 
+ #cards .wrapper .top h4 span { 
+    color: rgb(11 190 97);
+ } 
+ #cards .wrapper .top p { 
+    font-size: 16px;
+    margin: .8rem 0 2rem
+ } 
+
+ /* middle section */
+
+ #cards .wrapper .middle ul { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ #cards .wrapper .middle ul li { 
+    width: 17%;
+    margin: 0 0 2rem 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    height: 22rem;
+ }
+ #cards .wrapper .middle ul li:first-child{
+    margin-left: 0;
+ }
+ #cards .wrapper .middle ul li .image img { 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+ }
+ #cards .wrapper .middle ul li small { 
+    color: #fff;
+    padding: 7px;
+    background-color: rgb(15 167 111);
+    border-radius: 5px;
+    position: absolute;
+    right: 15%;
+    top: 32%;    
+ }
+ #cards .wrapper .middle ul li span.condent{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+ }
+ #cards .wrapper .middle ul li h5 { 
+    font-size:17px;
+    margin: 1rem 0 .5rem 0;
+ }
+ #cards .wrapper .middle ul li p { 
+    font-size: 15px;
+ } 
+ #cards .wrapper .middle ul li .button { 
+    padding: 10px;
+    background-color: rgb(15 167 111);
+    margin:0rem 1rem 1rem ;
+    font-size: 14px;
+    border-radius: 5px;
+ }
+ 
+ /* bottom section */
+
+ #cards .wrapper .bottom ul { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ #cards .wrapper .bottom ul li { 
+   width: 17%;
+   margin: 0 0 2rem 1rem;
+   border-radius: 10px;
+   background-color: #fff;
+   position: relative;
+   height: 22rem;
+ }
+ #cards .wrapper .bottom ul li:first-child{
+   margin-left: 0;
+}
+#cards .wrapper .bottom ul li .image img { 
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+}
+#cards .wrapper .bottom ul li small { 
+   color: #fff;
+   padding: 7px;
+   background-color: rgb(15 167 111);
+   border-radius: 5px;
+   position: absolute;
+   right: 15%;
+   top: 32%;    
+}
+#cards .wrapper .bottom ul li .condent{
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+#cards .wrapper .bottom ul li h5 { 
+   font-size:17px;
+   margin: 1rem 0 .5rem 0;
+}
+#cards .wrapper .bottom ul li p { 
+   font-size: 15px;
+} 
+#cards .wrapper .bottom ul li .button { 
+   padding: 10px;
+   background-color: rgb(15 167 111);
+   margin:0rem 1rem 1rem ;
+   font-size: 14px;
+   border-radius: 5px;
+}
+#cards .wrapper .bottom ul li .button1 button{
+   margin-top: auto; 
+  display: flex;
+  justify-content: center;
+}
+
+ /* styling the footer section */
+
+ footer { 
+    background-color: rgb(1 20 9 )
+ }
+ footer .wrapper .footer-condainer { 
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+ }
+ footer .wrapper .footer-condainer .left { 
+    display: flex;
+    color: #fff;
+ }
+ footer .wrapper .footer-condainer .left h6 { 
+    font-size: 17px;
+    margin-right: 1rem;
+ }
+ footer .wrapper .footer-condainer .left a { 
+   font-size: 17px;
+}
+ footer .wrapper .footer-condainer .right a { 
+    font-size: 30px;  
+    margin-right: 1rem;
+ }
+
+/* responsive design */
+
+@media all and (max-width:1280px){ 
+   #ecosystem .wrapper .top ul li span {
+      width: 55%;
+   }
+   #cards .wrapper .bottom ul li small,#cards .wrapper .middle ul li small {
+      top: 24%;
+  }
+}
+@media all and (max-width:1080px){  
+   #ecosystem .wrapper .top ul li span {
+      width: 65%;
+  } 
+   #cards .wrapper .middle ul li small,#cards .wrapper .bottom ul li small{
+      top: 23%;
+   }
+   #cards .wrapper .middle ul li .button, #cards .wrapper .bottom ul li .button {
+      margin: 0rem .5rem .5rem;   
+  }
+   #ecosystem .wrapper .bottom .text span h6 {
+      font-size: 15px;
+  }
+   #vision-tomorrow .wrapper ul li span {
+      width: 20%;
+   }
+   #home .spotlight .wrapper div h1 {
+      line-height: 3rem;
+      font-size: 32px;
+  }
+  #techies-park .wrapper .top .para p {
+      font-size: 16px;
+   }
+   #techies-park .wrapper .top .para h2 {
+      margin-top: 0;
+      line-height: 1rem;
+   }
+  #techies-park .wrapper .bottom .para {
+      padding: 1rem;
+      font-size: 27px;
+   }
+}
+@media (max-width: 980px) {
+   #home .spotlight .wrapper div h1 {
+       line-height: 2rem;
+       font-size: 28px;
+   }
+   #ecosystem .wrapper .top ul li span {
+      width: 85%;
+   }
+   #ecosystem .wrapper .bottom {
+      flex-direction: column-reverse;
+  }
+  #ecosystem .wrapper .bottom .text {
+       width: 100%;
+       border-radius: 0px 0px 15px 15px;    
+   }
+   #ecosystem .wrapper .bottom .image{
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      border-radius: 15px 15px 0 0;
+   }
+   #techies-park .wrapper .top{
+      flex-direction: column-reverse;
+   }
+   #techies-park .wrapper .bottom{
+      flex-direction: column;
+   }
+   #techies-park .wrapper .top .image{
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+      box-shadow: none;
+      margin-left: 0;
+   }
+   #techies-park .wrapper .top .para{
+      width: 100%;
+      border-radius: 0px 0px 15px 15px;
+      text-align: center;
+   }
+   #techies-park .wrapper .bottom .image {
+      width: 100%; 
+      box-shadow: none;
+      margin-left: 0;
+   }
+   #techies-park .wrapper .bottom .para {
+      width: 100%;
+      text-align: center;
+   }
+   #cards .wrapper .middle ul li {
+      width: 30%;
+   }
+   #cards .wrapper .middle ul li small, .bottom ul li small {
+      top: 33%;
+  }
+  #cards .wrapper .bottom ul li {
+      width: 30%;
+   }
+   #cards .wrapper .bottom ul li small, .bottom ul li small {
+      top: 33%;
+   }
+   footer .wrapper .footer-condainer .right a {
+      font-size: 15px;
+  }
+  footer .wrapper .footer-condainer .left a,h6 {
+      font-size: 10px;
+   }
+   footer .wrapper .footer-condainer .left h6 {
+      font-size: 10px;
+   }
+}
+@media all and (max-width:768px){ 
+   #home header .wrapper .header-container nav.right ul.menu{
+      position: fixed;
+      top: 60px;
+      left: -100%;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      background-color: #fff;
+   }
+   #home header .wrapper .header-container nav.right #click:checked ~ ul.menu{
+      left: 0%;
+   }
+   #home header .wrapper .header-container nav.right #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+   }
+   #home header .wrapper .header-container nav.right .menu-btn i{
+      display: block;
+      margin-left: 30rem;
+   }
+   #home header .wrapper .header-container nav.right .menu li{
+      margin: 15px 0;
+   }
+   #home header .wrapper .header-container nav.right .menu li a{
+      font-size: 20px;
+   }
+   #home header .wrapper .header-container nav.right .menu li a:hover{
+      color: rgb(33 191 109);
+   }
+   #home .spotlight .wrapper div h1 {
+      font-size: 21px;
+  }
+  #home .spotlight .wrapper div p {
+      font-size: 15px;
+   }
+   #ecosystem .wrapper .top ul {
+      flex-direction: column;
+      display: flex;
+  }
+  #ecosystem .wrapper .top ul li span {
+      width: 50%;
+   }
+   #ecosystem .wrapper .top ul li:nth-child(5) { 
+      width: 100%;
+  }
+  #ecosystem .wrapper .bottom .text span h6 {
+      font-size: 14px;
+   }
+   #ecosystem .wrapper .bottom .text p {
+      font-size: 14px;
+  }
+  #techies-park .wrapper .top, .bottom {
+      margin-bottom: 0;
+   }
+   #vision-tomorrow .wrapper ul li {
+      width: 45%;
+   }
+   #vision-tomorrow .wrapper ul li:last-child {
+      width: 45%;
+      margin-top: 2rem;
+   }
+   #techies-park .wrapper .banner .right p {
+      font-size: 13px;
+   }
+   #techies-park .wrapper .banner .right h5 {
+      font-size: 18px;
+  }
+  #techies-park .wrapper .banner .left {
+      width: 100%;
+   }
+   #techies-park .wrapper .bottom .image {
+      margin-top: 2rem;
+  }
+  #techies-park .wrapper .bottom .para .button {
+   font-size: 15px;
+   }    
+   #techies-park .wrapper .bottom .para {
+      margin-bottom: 2rem;
+   }#cards {
+      margin-top: 3rem;
+  }  
+   #cards .wrapper .middle ul li small,
+   #cards .wrapper .bottom ul li small {
+      top: 27%;
+   }
+}
+@media (max-width: 640px) {
+   #home header .wrapper .header-container nav.right .menu-btn i {
+       margin-left: 25rem;
+   }
+   #home header .wrapper .header-container .left {
+      width: 10%;
+  }  
+    #ecosystem .wrapper .top ul li span {
+      width: 60%;
+  }
+  #techies-park .wrapper .banner {
+      flex-direction: column;
+   }
+   #techies-park .wrapper .banner .left {
+      width: 40%;
+  }
+  #techies-park .wrapper .banner .right {
+      margin-left: 0rem;
+   }
+   #cards .wrapper .middle ul li,
+   #cards .wrapper .bottom ul li {
+      width: 45%;
+  }
+   #cards .wrapper .middle ul li small,
+   #cards .wrapper .bottom ul li small {
+      top: 35%;
+   }#techies-park .wrapper .bottom .para h2 {
+      font-size: 25px;
+  }#techies-park .wrapper .bottom .para p {
+      font-size: 15px;
+   }footer .wrapper .footer-condainer {
+      flex-direction: column;
+      align-items: center;
+  }footer .wrapper .footer-condainer .left {
+      order: 2;
+      margin-top: 1rem;
+   }
+}
+@media (max-width: 540px) {
+   #home header .wrapper .header-container nav.right .menu-btn i {
+       margin-left: 20rem;
+   }
+   #vision-tomorrow .wrapper ul li,
+   #vision-tomorrow .wrapper ul li:last-child {
+      width: 100%;
+  }
+  #vision-tomorrow .wrapper ul li span {
+      width: 10%;
+   }
+   #cards .wrapper .middle ul li small, #cards .wrapper .bottom ul li small {
+      top: 30%;
+  }
+  #ecosystem .wrapper .top ul li span {
+      width: 65%;
+   }
+   #home header .wrapper .header-container nav.right ul.menu {
+
+      top: 75px;
+   }
+}
+@media (max-width: 480px) {
+   #home header .wrapper .header-container nav.right .menu-btn i {
+       margin-left: 10rem;
+   }
+   #home header .wrapper .header-container nav.right ul.menu {
+      top: 65px;
+  }
+  #home header .wrapper .header-container nav.right .menu li a {
+      font-size: 15px;
+   }
+   #home .spotlight .wrapper div {
+      padding: 2rem;
+  }
+  #ecosystem .wrapper .top ul li span {
+      width: 85%;
+   }
+   #ecosystem .wrapper .top ul li p {
+      font-size: 13px;
+  }
+  #ecosystem .wrapper .bottom .image {
+      height: 250px;
+   }
+   #ecosystem .wrapper .bottom .text span h6 {
+      font-size: 15px;
+   }
+   #vision-tomorrow .wrapper h4 {
+      line-height: 2rem;
+      font-size: 21px;
+   }
+   #vision-tomorrow .wrapper ul li span {
+      width: 15%;
+  }
+  #vision-tomorrow .wrapper ul li p {
+      font-size: 14px;
+   }
+   #techies-park .wrapper .banner .right h5 {
+      line-height: 1.7rem;
+  }
+  #techies-park .wrapper .top .image,
+  #techies-park .wrapper .bottom .image{
+      height: 250px;
+   }
+   #techies-park .wrapper .top .para h2 {
+      font-size: 30px;
+  }
+  #techies-park .wrapper .top .para {
+      padding: 1rem;
+   }
+   #cards .wrapper .top h4 {
+      font-size: 25px;
+  }
+  #cards .wrapper .top p {
+      font-size: 14px;
+   }
+   #cards .wrapper .middle ul li, #cards .wrapper .bottom ul li {
+      width: 100%;
+      height: 415px;
+  }
+  #cards .wrapper .middle ul li .button, .bottom ul li .button {
+      margin: 0rem 1rem 1rem;
+   }
+   #cards .wrapper .middle ul li small, #cards .wrapper .bottom ul li small {
+      top: 45%;
+      right: 20%;
+  }
+  footer .wrapper .footer-condainer .left {
+      flex-direction: column;
+      align-items: center;
+   }
+   footer .wrapper .footer-condainer .left h6 {
+      margin-bottom: .5rem;
+  }
+}
